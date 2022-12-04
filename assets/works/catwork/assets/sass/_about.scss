@@ -1,0 +1,257 @@
+@use 'responsive' as *;
+
+.about {
+    width: 100vw;
+    max-height: 1180px;
+    background: url(../images/main_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include mobile {
+        height: 588px;
+    }
+
+    .wrap {
+        position: relative;
+        max-width: 1080px;
+        height: 100%;
+        padding-top: 1%;
+
+        .mobile_scroll {
+            display: none;
+            position: absolute;
+            top: 85px;
+            right: 70px;
+            font-family: 'DIN Condensed';
+            font-size: 1.2em;
+            color: #F39800;
+
+            @include mobile {
+                display: block;
+            }
+
+            &::after {
+                position: absolute;
+                top: 2px;
+                right: -30px;
+                content: '';
+                display: block;
+                width: 85%;
+                height: 3px;
+                border-right: 2px solid #F39800;
+                border-bottom: 1px solid #F39800;
+                transform: skew(60deg);
+            }
+        }
+
+        .aboutNav {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            font-size: 1.8em;
+            font-family: 'DINpro';
+
+            @include mobile {
+                display: none;
+            }
+
+            &__list {
+                display: flex;
+                gap: 25px;
+            }
+
+            &__sns-icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                gap: 15px;
+
+                &>li {
+                    width: 30px;
+                    height: 30px;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        background: #e8e8e8;
+                        border-radius: 50%;
+
+                        img {
+                            height: 60%;
+                        }
+                    }
+                }
+
+                // .f-icon {
+                //     background: url(../images/icon/f_icon.png) no-repeat;
+                //     // background-size: cover;
+                //     background-position: center center;
+                // }
+
+                // .is-icon {
+                //     background: url(../images/icon/is_icon.png) no-repeat;
+                //     background-size: cover;
+                //     background-position: center center;
+                // }
+            }
+        }
+
+        .aboutTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3%;
+        }
+
+        .aboutContents {
+            height: 70%;
+            min-height: 625px;
+
+            @include mobile {
+                min-height: 387px;
+            }
+
+            @include tab {
+                min-height: 600px;
+            }
+
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 68px;
+                width: 80%;
+                height: 100%;
+                margin-left: 8%;
+
+                @include mobile {
+                    width: 100vw;
+                    margin-left: 0;
+                    overflow: auto;
+                    flex-wrap: nowrap;
+                    gap: 70px;
+                    padding-left: 15%;
+                    margin-top: 26px;
+                }
+
+
+                @include tab {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                &__items {
+                    position: relative;
+                    width: 50%;
+                    height: 50%;
+
+                    @include mobile {
+                        width: 100vw;
+                        height: 100%;
+                    }
+
+                    .textArea {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 350px;
+                        height: 350px;
+                        border: 5px solid #F39800;
+                        border-radius: 50%;
+                        margin-left: auto;
+                        padding-top: 5%;
+
+                        @include mobile {
+                            width: 300px;
+                            height: 300px;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 40px;
+                            left: 7px;
+                            width: 10%;
+                            height: 10%;
+                            background: url(../images/point/yajirusi.png) no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+
+                            @include mobile {
+                                bottom: 9px;
+                                left: 26px;
+                                transform: skew(17deg, 340deg);
+                            }
+                        }
+
+                        &__point,
+                        &__title {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        &__point {
+                            font-size: clamp(1.6em, 1.5vw, 2.5em);
+                            height: 15%;
+                        }
+
+                        &__title {
+                            font-weight: 700;
+                            font-size: clamp(1.5em, 1.5vw, 2.2em);
+                            height: 30%;
+                        }
+
+                        &__text {
+                            font-size: clamp(1.2em, 1.5vw, 1.6em);
+                            width: 80%;
+                            height: 40%;
+                            text-align: center;
+                        }
+                    }
+
+                    .imgArea {
+                        position: absolute;
+                        bottom: -64px;
+                        left: -5px;
+                        // bottom: -35px;
+                        // left: 55px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        width: 30%;
+                        height: 30%;
+
+                        @include mobile {
+                            bottom: 0px;
+                            left: -20px;
+                        }
+
+                        img {
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .more-btn {
+            margin-top: 70px;
+
+            @include mobile {
+                margin-top: 30px;
+            }
+        }
+
+    }
+}

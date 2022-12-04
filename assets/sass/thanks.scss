@@ -1,0 +1,38 @@
+@use 'responsive' as *;
+#contact {
+
+    .main__contents__contact {
+
+        .thanks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            @include mobile {
+                flex-direction: column-reverse;
+            }
+
+            &__message {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                height: 200px;
+                font-size: 2.4em;
+
+                @include mobile {
+                    font-size: 1.6em;
+                }
+            }
+            &__img {
+                width: 200px;
+                height: 200px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

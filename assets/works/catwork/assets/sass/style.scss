@@ -1,0 +1,51 @@
+@use "responsive" as *;
+@use "header";
+@use "topContent";
+@use "about";
+@use "infomation";
+@use "mushiba";
+@use "album";
+@use "newsTopics";
+@use "blog";
+@use "recruit";
+@use "hours";
+@use "access";
+@use "footer";
+
+
+.wrap {
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: clamp(3.3em, 5vw, 6.3em);
+    font-family: 'DIN Condensed';
+    color: #F39800;
+}
+
+.subTitle {
+    font-size: 1.4em;
+    color: #818181;
+}
+
+.more-btn {
+    width: 300px;
+    height: 45px;
+    border: 2px solid #F39800;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 1.9em;
+    }
+}
+.nav-items-click{}
+// 

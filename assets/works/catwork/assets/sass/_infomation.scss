@@ -1,0 +1,305 @@
+@use 'responsive' as *;
+
+.infomation {
+    margin-top: 120px;
+
+    @include mobile {
+        margin-top: 30px;
+    }
+
+    .icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -35px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #f39800;
+
+        @include mobile {
+            width: 40px;
+            height: 40px;
+        }
+
+        img {
+            width: 55%;
+        }
+    }
+
+    .navArea {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1080px;
+        height: 400px;
+        background: #F2F2F2;
+        box-shadow: 10px 10px 0 1px #D9D9D9;
+        border-radius: 10px;
+        margin: 0 auto;
+
+        @include tab {
+            width: 90vw;
+            height: 350px;
+        }
+
+        @include mobile {
+            align-items: flex-start;
+            width: 95vw;
+            height: 295px;
+        }
+
+        &__icon {
+            @include mobile {
+                margin: 0;
+                top: 10px;
+                left: 25%;
+            }
+        }
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+
+            @include mobile {
+                width: 60%;
+                margin-top: 50px
+            }
+
+            .title {
+                font-family: 'DINPro';
+            }
+        }
+
+        &__navList {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            font-size: 1.6em;
+            row-gap: 6px;
+            margin-top: 35px;
+
+            @include mobile {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30%;
+                height: 100%;
+                flex-direction: column;
+                margin: 0;
+            }
+
+            &__items {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25%;
+
+                @include mobile {
+                    justify-content: start;
+                    width: 90%;
+                    height: 17%;
+                    border-bottom: 1px solid #f39800;
+                }
+
+            }
+        }
+
+        &__action {
+            display: flex;
+            gap: 50px;
+            margin-top: 74px;
+
+            @include tab {
+                gap: 10px;
+                margin-top: 45px;
+            }
+
+            @include mobile {
+                flex-direction: column;
+                gap: 30px;
+                width: 60%;
+                margin: 33px 0 0 2%;
+            }
+
+            .actionBox {
+                width: 400px;
+                height: 60px;
+                border: 4px solid #f39800;
+                border-radius: 15px;
+
+                @include tab {
+                    // width: 80%;
+                    width: 330px;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    height: 50px;
+                    border: 2px solid #f39800;
+                }
+
+                &>a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: baseline;
+
+                    .action-icon {
+                        width: 30px;
+                        height: 30px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .text {
+                        font-size: 1.6em;
+
+                        @include mobile {
+                            width: 60%;
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .actionArea {
+        display: flex;
+        width: 100vw;
+        height: 575px;
+        margin-top: 86px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        .staff,
+        .schedule {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: url(../images/staff_bg.png) no-repeat;
+            background-size: cover;
+
+            @include mobile {
+                width: 65%;
+                height: 30%;
+            }
+
+            .contentArea {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 470px;
+                height: 290px;
+                border-radius: 10px;
+                background: url(../images/border_img.png) no-repeat #fff;
+                background-size: cover;
+                background-position: center center;
+
+                @include tab {
+                    width: 90%;
+                    height: 50%;
+                    background: #fff;
+                    border: 5px dashed #e4e4e4;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    height: 100%;
+                    background: #fff;
+                    border: 5px dashed #e4e4e4;
+                }
+
+
+                &__icon {
+
+                    @include mobile {
+                        top: 20px;
+                    }
+                }
+
+                &__title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 73px 0 54px;
+
+                    @include mobile {
+                        margin: 30px 0 20px;
+                    }
+
+                    .title {
+                        font-family: 'DIN Condensed';
+                    }
+                }
+
+                &__text {
+                    font-size: 1.6em;
+                    text-align: center;
+
+                    @include mobile {
+                        width: 90%;
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+
+        .staff {
+
+            .contentArea {
+                top: 144px;
+                right: 86px;
+
+                @include tab {
+                    top: 40%;
+                    right: 5%;
+                }
+
+                @include mobile {
+                    top: 50%;
+                    right: -50%;
+                }
+            }
+        }
+
+        .schedule {
+            background: url(../images/calendar_bg.png) no-repeat;
+            background-size: cover;
+
+            @include mobile {
+                margin-top: auto;
+                margin-left: auto;
+            }
+
+            .contentArea {
+                top: 144px;
+                left: 86px;
+
+                @include tab {
+                    top: 40%;
+                    left: 5%;
+                }
+
+                @include mobile {
+                    top: -50%;
+                    left: -50%;
+                }
+            }
+        }
+    }
+}

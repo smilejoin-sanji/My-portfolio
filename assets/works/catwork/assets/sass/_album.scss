@@ -1,0 +1,152 @@
+@use 'responsive' as *;
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 127px;
+
+    @include mobile {
+        overflow: hidden;
+    }
+
+    @include tab {
+        overflow: hidden;
+    }
+
+
+    &__titleArea {
+        position: relative;
+        display: flex;
+
+        .title__img {
+            position: absolute;
+            top: 15px;
+            left: -200px;
+            width: 173px;
+            height: 83px;
+
+            @include mobile {
+                width: 63px;
+                height: 30px;
+                left: -70px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .album__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-family: 'DINPro';
+
+                @include mobile {
+                    font-size: 2.3em;
+                }
+            }
+        }
+    }
+
+    &__description {
+        margin-top: 35px;
+        font-size: 1.4em;
+
+        @include mobile {
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+    }
+
+    &__sns {
+        width: 1080px;
+        margin: 15px 0;
+
+        @include tab {
+            width: 100vw;
+        }
+
+        @include mobile {
+            width: 100vw;
+            margin: 5px 0;
+        }
+
+        &>a {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+
+            &>p {
+                font-family: 'DIN Condensed';
+                color: #f39800;
+                font-size: 1.4em;
+
+                @include mobile {
+                    font-size: 0.8em;
+                }
+            }
+
+            .sns__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                background: #e8e8e8;
+                border-radius: 50%;
+
+                @include mobile {
+                    width: 18px;
+                    height: 18px;
+                }
+
+
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        width: 1080px;
+        height: 255px;
+        overflow: auto;
+
+        @include tab {
+            width: 100vw;
+            margin-left: 5%;
+        }
+
+        @include mobile {
+            width: 100vw;
+            height: 230px;
+            gap: 10px;
+            margin-left: 5%;
+        }
+
+        &__items {
+            width: auto;
+            height: 100%;
+
+            &>a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@use 'responsive' as *;
+
+#contact {
+
+    .main__contents__contact {
+
+        .contactNotes {
+            font-size: 2em;
+            font-weight: 700;
+
+            @include mobile {
+                font-size: 1.6em;
+            }
+        }
+        .formArea {
+            .contactForm {
+
+                &__input {
+
+                    &__items {
+
+                        &:last-child {
+                            
+                            .inputArea {
+                                height: auto;
+                                max-height: 150px;
+                                overflow-y: scroll;
+                            }
+                        }
+                    }
+                }
+                &__sendArea {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5%;
+                    width: 16%;
+                    height: 100%;
+
+                    @include mobile {
+                        height: auto;
+                    }
+                    .send {
+                        width: 100%;
+                        height: 70%;
+                        border-radius: 15px;
+                        background: url(../images/btn.png) no-repeat;
+                        background-size: cover;
+                        background-position: center center;
+                        cursor: pointer;
+                        transition: all 0.4s;
+                        overflow: hidden;
+
+                        &:hover {
+                            transform: scale(1.04);
+                            background: #373737;
+                            font-size: 2em;
+                        }
+
+                        &:hover .submit {
+                            color: #fff;
+                            opacity: 1;
+                        }
+
+                        .submit {
+                            // display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            color: #373737;
+                            background: #373737;
+                            font-size: 1.6em;
+                            letter-spacing: 0.1em;
+                            font-family: 'Bangers', cursive;
+                            transition: all 0.4s;
+                            opacity: 0;
+                        }
+                    }
+                    .back {
+                        width: 100%;
+                        height: 25%;
+                        background: rgb(164, 164, 164);
+                        border-radius: 15px;
+                        font-size: 1.6em;
+                        letter-spacing: 0.1em;
+                        font-family: 'Bangers', cursive;
+                        cursor: pointer;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            transform: scale(1.04);
+                        }
+
+                        &>a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

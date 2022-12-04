@@ -1,0 +1,41 @@
+@use 'responsive' as *;
+@use 'header';
+@use 'nav';
+@use 'mainContents';
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    font-size: 10px;
+    font-family: 'Klee One', cursive;
+
+    @include mobile {
+        background: #fff;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 25%;
+
+    @include mobile {
+        height: 30%;
+        background: url(../images/mb-top.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 75%;
+
+    @include mobile {
+        height: 70%;
+        overflow: hidden;
+    }
+}
