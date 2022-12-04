@@ -470,11 +470,125 @@
 
     //---------------  contact
     &__about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3.2em;
-        font-family: 'Bangers';
-        letter-spacing: 0.2em;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+
+        .aboutList {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background: url(../images/about.png) no-repeat;
+            background-position: center right;
+            background-size: 80%;
+
+            @include mobile {
+                background-position: -250px 0;
+                background-size: 210%;
+            }
+
+
+
+            &__career {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 67%;
+                height: 50%;
+                padding: 20px;
+                background: #FFDC36;
+                border-radius: 15px;
+                margin-left: 3%;
+                color: #373737;
+                transition: height 0.6s;
+                overflow-y: scroll;
+
+                @include mobile {
+                    width: 96%;
+                    margin: auto 2% 25%;
+                }
+
+                &:hover {
+                    height: 80%;
+
+                    @include mobile {
+                        height: 70%;
+                    }
+
+                    .title__discription {
+                        // display: block;
+                        // margin-left: 0;
+                        opacity: 1;
+                        height: auto;
+                    }
+                }
+
+                &__rows {
+                    display: flex;
+                    gap: 50px;
+                    font-size: 2em;
+                    font-weight: 700;
+
+                    .date {
+                        flex: 1;
+
+                    }
+                    .title {
+                        flex: 3;
+
+                        &__discription {
+                            position: relative;
+                            height: 0;
+                            opacity: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                            padding-left: 16px;
+                            transition: all 1s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutPointer {
+            position: absolute;
+            bottom: 10%;
+            right: 20%;
+            display: flex;
+            gap: 10px;
+
+            @include mobile {
+                bottom: 5%;
+                right: 0;
+                left: 10%;
+                gap: 15px;
+            }
+
+            &>div {
+                width: 20px;
+                height: 20px;
+                background: url(../images/pointer.png) no-repeat;
+                background-size: 15px;
+                background-position: center center;
+                cursor: pointer;
+
+                @include mobile {
+                    width: 35px;
+                    height: 35px;
+                    background-size: 28px;
+                }
+            }
+
+            .pointer-active {
+                background: url(../images/pointer-active.png) no-repeat;
+                background-size: 18px;
+                background-position: center center;
+
+                @include mobile {
+                    background-size: 32px;
+                }
+            }
+        }
     }
 }

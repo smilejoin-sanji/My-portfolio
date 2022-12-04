@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 session_start();
 $error = [];
 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $post = $_SESSION['form'];
     }
 }
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -357,7 +357,269 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </article>
             <!-- --------------- about -->
             <article class="contents_container" id="about">
-                <div class="main__contents__about">Under Construction...</div>
+                <div class="main__contents__about">
+                    <div class="aboutList">
+                        <div class="aboutList__career">
+                            <!-- 1995 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>1995年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">中国黒竜江省生まれ</p>
+                                </div>
+                            </div>
+                            <!-- 2008 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2008年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">親と来日（三重県、中学１年）</p>
+                                    <p class="title__discription">
+                                        日本語０の状態で日本に来た<br>
+                                        授業受けるどころかまともに読み書きすることもできなかった<br>
+                                        中学校の先生と相談したところ、名古屋の学校紹介頂きました。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2009 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2009年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">名古屋に引越し</p>
+                                    <p class="title__discription">
+                                        名古屋の中学校に入学したが、言葉理解できないため<br>
+                                        友達もできず、担任先生から暴力受け<br>
+                                        一度通学するのやめようとしていた、親に相談し<br>
+                                        転校することに。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2010 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2010年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">転校</p>
+                                    <p class="title__discription">
+                                        新しい学校に転校、暇つぶしにブックオフで漫画立ち読み<br>
+                                        偶然に同じ学校の不良と出会い、話しかけてもらった。<br>
+                                        仲良くしてくれた。　初友。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2011 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2011年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">卒業</p>
+                                    <p class="title__discription">
+                                        彼のお陰でいろんな人と出会う事ができ、退屈だった学校生<br>
+                                        活も楽しいと思えるようになった。<br>
+                                        日本語もだいぶ話せるようになった。
+                                    </p>
+                                    <p class="title__name">高校入学</p>
+                                    <p class="title__discription">
+                                        中学ほとんどの時間は日本語の勉強に費やし<br>
+                                        授業の内容ほぼわからないまま高校受験を迎えた。<br>
+                                        公立は受験できず、推薦頂き私立高校に入学。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2012 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2012年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">高校中退</p>
+                                    <p class="title__discription">
+                                        授業について行けず、また留年の話もあったため<br>
+                                        中退することに。
+                                    </p>
+                                    <p class="title__name">初仕事</p>
+                                    <p class="title__discription">
+                                        16歳で社会人になった、目標もない、やりたい事もない<br>
+                                        養父の会社に就職。大工助手デビュー。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2014 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2014年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">退職</p>
+                                    <p class="title__discription">
+                                        助手生活、結構楽しかった。<br>
+                                        週６勤務で一日１０時間オーバーの現場仕事。<br>
+                                        手取り１０万円だけど実家暮らしで少ないとも思わなかった。<br>
+                                        そもそも自分はちゃんと仕事できてたかが怪しい。<br>
+                                        おそらく学費の返済とかで引かれてたのもあると思う。<br>
+                                        <br>
+                                        退職理由：高所恐怖症。<br>
+                                    </p>
+                                    <p class="title__name">一人暮らし</p>
+                                    <p class="title__discription">
+                                        退職後運送会社の方と出会い、正社員で働いていた。<br>
+                                        職場が遠いのもあって、一人暮らしする事にした。<br>
+                                        当時はオンラインゲームにはまり、手取り30万前後<br>
+                                        貰ったのを生活費除いて全て課金に費やした。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2018 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2018年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">焦り</p>
+                                    <p class="title__discription">
+                                        派遣社員で携帯ショップの仕事をしていた。<br>
+                                        ある日突然(そう突然)今後何しようかが全然わからない<br>
+                                        このままずっと自由に生きるのもそう長くない<br>
+                                        けど自分に何ができるかもわからない、何やりたいかもわからない。<br>
+                                    </p>
+                                    <p class="title__name">行動</p>
+                                    <p class="title__discription">
+                                        かれこれ悩んでも仕方ない、とりあえず将来的に向いてそう<br>
+                                        な求人を探しまくった。<br>
+                                        求人ページに書かれていた『独立塾』に目を引かれ、開いた先には違う人生が待っていた。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2019 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2019年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">入社</p>
+                                    <p class="title__discription">
+                                        東京まで説明会を聞きに行き、独立塾に応募して、無事に入社できた。それは今までの自分に知らなかった夜の世界だった。<br>
+                                        東京でも研修を終え、勤務先が決まり名古屋に戻ってきた。<br>
+                                        配属の店舗行って第一印象は：おしゃれ<br>
+                                        勤務が始まって第一印象：なんだこの人混みは、動けん、押すな<br>
+                                    </p>
+                                    <p class="title__name">出会い</p>
+                                    <p class="title__discription">
+                                        ジェンガの存在も知らなかった自分はみんなの笑い声に守られながら日々成長していた。<br>
+                                        そして社会人になって出会いの無さに感じていた悩みも解消<br>
+                                        むしろ色んな人に出会いすぎて名前と顔が一致しなかった。<br>
+                                    </p>
+                                    <p class="title__name">出逢い</p>
+                                    <p class="title__discription">
+                                        ここである女性に出逢い、お互いに興味を持ち、付き合うことに<br>
+                                        当時の彼女は大学生であり、かなり遊んでいた。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2020 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2020年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">退職</p>
+                                    <p class="title__discription">
+                                        1年間の独立塾を終え、卒業。
+                                    </p>
+                                    <p class="title__name">自営業</p>
+                                    <p class="title__discription">
+                                        独立塾で得た知識フル活用して、自分で店舗立ち上げ(極小さな)<br>
+                                        しかしタイミングよくコロナが流行る時期だった。<br>
+                                        開店２ヶ月目で緊急事態宣言によって営業停止。<br>
+                                        それに人脈などもなく、知名度もない状態で開店し、この店の存在はもはや身内の人しか知らなかった。<br>
+                                        かれこれ試して半年後あたりにようやく来客が増え、満席になる事も徐々に増えていた。<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2021 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2021年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">結婚</p>
+                                    <p class="title__discription">
+                                        会社員の時に出会った彼女と結婚<br>
+                                        ほんとはもっと仕事などが安定してからにするつもりだったが<br>
+                                        予定は変化に及ばないものだ。
+                                    </p>
+                                    <p class="title__name">２店舗目</p>
+                                    <p class="title__discription">
+                                        １店舗目まぁまぁ成功したから、２店舗目も行けるでしょう<br>
+                                        そういう軽い気持ちで２店舗目立ち上げ。<br>
+                                        案の定上手くいかなかった、コロナの影響もあったが、やはり自分自身のマネジメント力がまだ足りない事に気づき、７ヶ月目で閉店。
+                                    </p>
+                                    <p class="title__name">プログラミング</p>
+                                    <p class="title__discription">
+                                        コロナがあまりにも落ち着かず、営業できない日も多々あったので、趣味程度でJavaを独学し始めた。<br>
+                                        それが思うより刺さって、夢中になっていた<br>
+                                        初めて勉強というものが楽しいと思えた。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2022 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>2022年</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">閉店</p>
+                                    <p class="title__discription">
+                                        コロナで２年目の半分は、ほぼまともに営業できなかった<br>
+                                        第七波突入の時期に閉店と決意。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 現在 -->
+                            <div class="aboutList__career__rows">
+                                <div class="date">
+                                    <p>現在</p>
+                                    <p>｜</p>
+                                </div>
+                                <div class="title">
+                                    <p class="title__name">Web</p>
+                                    <p class="title__discription">
+                                        コロナ中に独学した経験もあり、web業界の方が自分に合うと思い、職業訓練校のwebデザイナー科に入学。<br>
+                                        ほんとに未経験者によくない業界だ。<br>
+                                        <br>
+                                        けど、頑張りがすぐに実感できる業種でもあると思う<br>
+                                        だから自分は挫折しなかったと思う。<br>
+                                        夢の中でレイアウト組んでコード叩いてるくらいだから<br>
+                                        多分好きだと思う。<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutPointer">
+                        <div class="pointer-active"></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </article>
         </div>
     </main>
