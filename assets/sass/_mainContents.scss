@@ -312,6 +312,8 @@
 
             @include mobile {
                 width: 60%;
+                height: auto;
+                padding-bottom: 15px;
             }
 
         }
@@ -530,6 +532,11 @@
                     font-size: 2em;
                     font-weight: 700;
 
+                    @include mobile {
+                        font-size: 1.6em;
+                        gap: 10px;
+                    }
+
                     .date {
                         flex: 1;
 
@@ -543,8 +550,12 @@
                             opacity: 0;
                             font-size: 16px;
                             font-weight: 400;
-                            padding-left: 16px;
+                            padding: 5px 0 15px 16px;
                             transition: all 1s;
+
+                            @include mobile {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }

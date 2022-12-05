@@ -526,6 +526,8 @@
 @media screen and (max-width: 769px) {
   .main__contents__contact .contactNotes {
     width: 60%;
+    height: auto;
+    padding-bottom: 15px;
   }
 }
 .main__contents__contact .formArea {
@@ -718,6 +720,12 @@
   font-size: 2em;
   font-weight: 700;
 }
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__career__rows {
+    font-size: 1.6em;
+    gap: 10px;
+  }
+}
 .main__contents__about .aboutList__career__rows .date {
   flex: 1;
 }
@@ -730,8 +738,13 @@
   opacity: 0;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 16px;
+  padding: 5px 0 15px 16px;
   transition: all 1s;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__career__rows .title__discription {
+    font-size: 14px;
+  }
 }
 .main__contents__about .aboutPointer {
   position: absolute;
