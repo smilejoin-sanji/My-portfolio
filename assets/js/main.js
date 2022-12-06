@@ -70,3 +70,27 @@
         })
     });
 }
+
+// about pointer
+{
+    const aboutPointer = document.querySelectorAll(".pointer");
+    const aboutItems = document.querySelectorAll(".js-about-items");
+
+    aboutPointer.forEach(clickItem => {
+        clickItem.addEventListener('click', e => {
+            
+            e.preventDefault();
+
+            aboutPointer.forEach(item => {
+                item.classList.remove('pointer-active')
+            });
+            clickItem.classList.add('pointer-active');
+            
+            // contentsの設定
+            aboutItems.forEach(content => {
+                content.classList.remove('about__active');
+            });
+            document.getElementById(clickItem.dataset.id).classList.add('about__active');
+        })
+    })
+}

@@ -678,12 +678,15 @@
 }
 @media screen and (max-width: 769px) {
   .main__contents__about .aboutList {
-    background-position: -250px 0;
+    background-position: -246px 0px;
     background-size: 210%;
   }
 }
-.main__contents__about .aboutList__career {
+.main__contents__about .aboutList .about__active {
   display: flex;
+}
+.main__contents__about .aboutList__career {
+  display: none;
   flex-direction: column;
   gap: 20px;
   width: 67%;
@@ -746,6 +749,324 @@
     font-size: 14px;
   }
 }
+.main__contents__about .aboutList__me {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: rgb(33, 33, 33);
+  font-family: "Vujahday Script";
+  overflow: hidden;
+}
+.main__contents__about .aboutList__me .my-machines {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 400px;
+  height: 380px;
+  z-index: 2;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .my-machines {
+    top: 35%;
+    left: 5%;
+    width: 90vw;
+    height: 290px;
+  }
+}
+.main__contents__about .aboutList__me .my-machines > p {
+  position: absolute;
+  bottom: 90px;
+  left: -40px;
+  font-size: 2.4em;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .my-machines > p {
+    left: 0;
+    font-size: 2em;
+  }
+}
+.main__contents__about .aboutList__me .my-machines__car {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 230px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .my-machines__car {
+    width: 150px;
+    top: -20px;
+    left: 70px;
+  }
+}
+.main__contents__about .aboutList__me .my-machines__car > img {
+  width: 100%;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .my-machines__car > img {
+    background: #FFDC36;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px -1px;
+  }
+}
+.main__contents__about .aboutList__me .my-machines__car > p {
+  font-size: 2.4em;
+  margin-top: 8px;
+  text-align: center;
+}
+.main__contents__about .aboutList__me .my-machines__bike {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 230px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .my-machines__bike {
+    width: 150px;
+    right: 10px;
+  }
+}
+.main__contents__about .aboutList__me .my-machines__bike > img {
+  width: 100%;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .my-machines__bike > img {
+    background: #FFDC36;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px -1px;
+  }
+}
+.main__contents__about .aboutList__me .my-machines__bike > p {
+  font-size: 2.1em;
+  margin-top: 8px;
+  text-align: center;
+}
+.main__contents__about .aboutList__me .age {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  font-size: 13em;
+  z-index: 1;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .age {
+    bottom: 27%;
+    left: 0;
+  }
+}
+.main__contents__about .aboutList__me .personality {
+  position: absolute;
+  bottom: 15px;
+  left: 35%;
+  font-size: 2.8em;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .personality {
+    bottom: 12%;
+    left: 10%;
+    font-size: 1.4em;
+  }
+}
+.main__contents__about .aboutList__me .holidy {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  font-size: 1.8em;
+  font-family: "klee one";
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .holidy {
+    top: 21%;
+    left: 3%;
+    font-size: 1.6em;
+    text-shadow: 0.5px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+.main__contents__about .aboutList__me .like {
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.8em;
+  font-family: "klee one";
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__me .like {
+    top: 0%;
+    bottom: 0;
+    text-shadow: 0.5px 1px rgba(0, 0, 0, 0.25);
+    right: 30%;
+    left: 3%;
+    gap: 0;
+  }
+}
+.main__contents__about .aboutList__me .like > span {
+  font-size: 0.8em;
+  margin-left: auto;
+}
+.main__contents__about .aboutList__skills {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-family: "Vujahday Script";
+  overflow: hidden;
+}
+.main__contents__about .aboutList__skills .skillsTitle {
+  position: absolute;
+  font-size: 9em;
+  bottom: 10%;
+  left: 40%;
+  letter-spacing: 0.2em;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsTitle {
+    bottom: 8%;
+    left: 30%;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea {
+  position: relative;
+  width: 30%;
+  margin-left: 5%;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea {
+    width: 65vw;
+    height: 50vh;
+    background: #fff;
+    margin-left: 0;
+    margin-top: 10%;
+    box-shadow: 3px 4px 4px -1.6px rgba(0, 0, 0, 0.4);
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows__img {
+  width: 102px;
+  height: 102px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows__img {
+    width: 72px;
+    height: 72px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows__img img {
+  width: 100px;
+  height: auto;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows__img img {
+    width: 70px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(1) {
+    left: 20px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(2) {
+  left: 50px;
+  top: 100px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(2) {
+    left: 60px;
+    top: 65px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(3) {
+  left: 0;
+  top: 200px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(3) {
+    left: 20px;
+    top: 130px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(4) {
+  flex-direction: row-reverse;
+  right: 0;
+  top: 280px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(4) {
+    right: 20px;
+    top: 200px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(4) > .skillsName {
+  margin-right: -50px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(4) > .skillsName {
+    margin-right: -35px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(5) {
+  flex-direction: row-reverse;
+  right: 50px;
+  top: 380px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(5) {
+    right: 60px;
+    top: 265px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(5) > .skillsName {
+  margin-right: -50px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(5) > .skillsName {
+    margin-right: -35px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(6) {
+  flex-direction: row-reverse;
+  right: 0;
+  top: 480px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(6) {
+    right: 20px;
+    top: 330px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(6) > .skillsName {
+  margin-right: -50px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsRows:nth-child(6) > .skillsName {
+    margin-right: -35px;
+  }
+}
+.main__contents__about .aboutList__skills .skillsArea .skillsName {
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  margin-left: -50px;
+}
+@media screen and (max-width: 769px) {
+  .main__contents__about .aboutList__skills .skillsArea .skillsName {
+    font-size: 2em;
+    margin-left: -35px;
+  }
+}
 .main__contents__about .aboutPointer {
   position: absolute;
   bottom: 10%;
@@ -761,7 +1082,7 @@
     gap: 15px;
   }
 }
-.main__contents__about .aboutPointer > div {
+.main__contents__about .aboutPointer .pointer {
   width: 20px;
   height: 20px;
   background: url(../images/pointer.png) no-repeat;
@@ -770,7 +1091,7 @@
   cursor: pointer;
 }
 @media screen and (max-width: 769px) {
-  .main__contents__about .aboutPointer > div {
+  .main__contents__about .aboutPointer .pointer {
     width: 35px;
     height: 35px;
     background-size: 28px;

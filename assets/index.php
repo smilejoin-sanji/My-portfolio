@@ -361,7 +361,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <article class="contents_container" id="about">
                 <div class="main__contents__about">
                     <div class="aboutList">
-                        <div class="aboutList__career">
+                        <div class="aboutList__career js-about-items about__active" id="career">
                             <!-- 1995 -->
                             <div class="aboutList__career__rows">
                                 <div class="date">
@@ -611,11 +611,78 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 </div>
                             </div>
                         </div>
+
+                        <div class="aboutList__me js-about-items" id="me">
+                            <div class="my-machines">
+                                <p>My-machines</p>
+                                <div class="my-machines__car">
+                                    <img src="./images/zn6.png" alt="">
+                                    <p>Toyota 86(zh6)</p>
+                                </div>
+                                <div class="my-machines__bike">
+                                    <img src="./images/nc42.png" alt="">
+                                    <p>CB400SF(nc42)</p>
+                                </div>
+                            </div>
+                            <p class="age">Age&nbsp;:&nbsp;27</p>
+                            <p class="personality">Personality&nbsp;:&nbsp;ENFP-A</p>
+                            <p class="holidy">
+                                最近の休日：<br>
+                                &nbsp;海沿いツーリング
+                            </p>
+                            <p class="like">
+                                好きな言葉：<br>
+                                あまり強い言葉を遣うなよ。弱く見えるぞ。<br>
+                                <span>ー藍染惣右介　(BLEACH)</span>
+                            </p>
+                        </div>
+
+                        <div class="aboutList__skills js-about-items" id="skills">
+                            <p class="skillsTitle">Skills</p>
+                            <div class="skillsArea">
+                                <div class="skillsRows">
+                                    <div class="skillsRows__img">
+                                        <img src="./images/skills-y.png" alt="">
+                                    </div>
+                                    <p class="skillsName">Html&nbsp;Css</p>
+                                </div>
+                                <div class="skillsRows">
+                                    <div class="skillsRows__img">
+                                        <img src="./images/skills-y.png" alt="">
+                                    </div>
+                                    <p class="skillsName">Javascript</p>
+                                </div>
+                                <div class="skillsRows">
+                                    <div class="skillsRows__img">
+                                        <img src="./images/skills-y.png" alt="">
+                                    </div>
+                                    <p class="skillsName">PHP</p>
+                                </div>
+                                <div class="skillsRows">
+                                    <div class="skillsRows__img">
+                                        <img src="./images/skills-g.png" alt="">
+                                    </div>
+                                    <div class="skillsName">Photoshop</div>
+                                </div>
+                                <div class="skillsRows">
+                                    <div class="skillsRows__img">
+                                        <img src="./images/skills-g.png" alt="">
+                                    </div>
+                                    <div class="skillsName">Illustrator</div>
+                                </div>
+                                <div class="skillsRows">
+                                    <div class="skillsRows__img">
+                                        <img src="./images/skills-g.png" alt="">
+                                    </div>
+                                    <div class="skillsName">Figma</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="aboutPointer">
-                        <div class="pointer-active"></div>
-                        <div></div>
-                        <div></div>
+                        <div class="pointer pointer-active" data-id="career"></div>
+                        <div class="pointer" data-id="me"></div>
+                        <div class="pointer" data-id="skills"></div>
                     </div>
                 </div>
             </article>
