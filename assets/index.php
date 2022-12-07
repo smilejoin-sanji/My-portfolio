@@ -39,12 +39,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="愛知県でWeb制作を行っているSmileJoinです。ホームページ、ランディングページなど、Web制作の事ならお気軽にお問い合わせください。一度きりでなく、長い付き合いをしていけるよう心かけています、ご依頼は全力で...">
     <title>Web制作・ホームページ制作 - SmileJoin</title>
+    <meta property="og:type" content="website" />
     <meta property="og:locale" content="ja_JP" />
     <meta property="og:title" content="Web制作・ホームページ制作 - SmileJoin" />
-    <meta property="og:site_name" content="SmileJoin | Web制作" />
     <meta property="og:description" content="愛知県でWeb制作を行っているSmileJoinです。ホームページ、ランディングページなど、Web制作の事ならお気軽にお問い合わせください。一度きりでなく、長い付き合いをしていけるよう心かけています、ご依頼は全力で..." />
     <meta property="og:url" content="https://smilejoin.design" />
-    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SmileJoin | Web制作" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="https://smilejoin.design/" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
